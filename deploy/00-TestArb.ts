@@ -8,11 +8,12 @@ const main: DeployFunction =  async function (
     const { deployments, getNamedAccounts, network } = hre;
     const { deploy } = deployments;
     const { deployer } = await getNamedAccounts();
+    const blockConfirmation = network.name === 'hardhat' ? 0 : 2;
     
     console.log("Starting deployed")
-    const TestArb = await deploy("TESING", {
+    const TestArb = await deploy("TestArb", {
         from: deployer,
-        waitConfirmations: 2
+        waitConfirmations: blockConfirmation
     });
     // const txnres =  contractTxn.waitForDeployment()
 

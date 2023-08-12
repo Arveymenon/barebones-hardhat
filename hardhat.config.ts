@@ -1,6 +1,7 @@
 import { HardhatUserConfig, task } from "hardhat/config";
 // import "@nomicfoundation/hardhat-toolbox";
 import "@nomiclabs/hardhat-etherscan";
+import "@nomiclabs/hardhat-ethers";
 import "@nomiclabs/hardhat-waffle";
 import "@typechain/hardhat";
 import "hardhat-gas-reporter";
@@ -16,15 +17,16 @@ const WALLET_PRIVATE_KEY = process.env.WALLET_PRIVATE_KEY || "";
 
 // console.log("RPC_URL", RPC_URL)
 const config: HardhatUserConfig = {
-  solidity: "0.8.19",
+  solidity: "0.8.0",
   defaultNetwork: "hardhat",
   networks: {
     hardhat: {
       chainId: 31337,
     },
     sepolia: {
-      url: RPC_URL+WALLET_PRIVATE_KEY,
-      accounts: [WALLET_PRIVATE_KEY]
+      url: RPC_URL,
+      accounts: [WALLET_PRIVATE_KEY],
+      chainId: 11155111
     }
   },
   namedAccounts: {

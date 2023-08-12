@@ -1,0 +1,85 @@
+{
+  "address": "0x5DEf5a28f80ed4cce7AADeBCfd2477Ed90248eEf",
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [],
+      "name": "executeArb",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getCurrentValue1",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getCurrentValue2",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x7d25846b69520704e48c28887828a52e2999f4efbdbd2665d0627616486a3730",
+  "receipt": {
+    "to": null,
+    "from": "0x51d6b659F85350A631070C37a5fA6284a53ad83d",
+    "contractAddress": "0x5DEf5a28f80ed4cce7AADeBCfd2477Ed90248eEf",
+    "transactionIndex": 52,
+    "gasUsed": "129801",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x7bd1a03d4e1b13990cf6bcb47ba207992800417bee8aa79c3b46b9c5e4ce7c87",
+    "transactionHash": "0x7d25846b69520704e48c28887828a52e2999f4efbdbd2665d0627616486a3730",
+    "logs": [],
+    "blockNumber": 4073605,
+    "cumulativeGasUsed": "13509114",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 1,
+  "solcInputHash": "7a876001cd4c3df336d96c63f54b16a7",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"executeArb\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getCurrentValue1\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getCurrentValue2\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/TestArb.sol\":\"TestArb\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/TestArb.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n\\npragma solidity ^0.8.0;\\n\\ncontract TestArb {\\n\\n    constructor() {}\\n\\n    function getCurrentValue1 () public pure returns (uint256) {\\n        return 2.5e10;\\n    }\\n\\n    function getCurrentValue2 () public pure returns (uint256) {\\n        return 2.6e10;\\n    }\\n\\n    function executeArb() public pure returns (bool) {\\n        return true;\\n    }\\n}\",\"keccak256\":\"0x382d84729e38f1d2cf9ef41967cd23b6c53307a198c452353252a8632e184fd0\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50610163806100206000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c80634a38891f146100465780635b0c0b341461006457806372fd855f14610082575b600080fd5b61004e6100a0565b60405161005b91906100fc565b60405180910390f35b61006c6100ad565b60405161007991906100e1565b60405180910390f35b61008a6100b6565b60405161009791906100fc565b60405180910390f35b60006405d21dba00905090565b60006001905090565b600064060db88400905090565b6100cc81610117565b82525050565b6100db81610123565b82525050565b60006020820190506100f660008301846100c3565b92915050565b600060208201905061011160008301846100d2565b92915050565b60008115159050919050565b600081905091905056fea2646970667358221220a8008c2255fdf55cbd71f9511ee61a3a0beb5203fa1fea501dda2f7954a804d264736f6c63430008000033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100415760003560e01c80634a38891f146100465780635b0c0b341461006457806372fd855f14610082575b600080fd5b61004e6100a0565b60405161005b91906100fc565b60405180910390f35b61006c6100ad565b60405161007991906100e1565b60405180910390f35b61008a6100b6565b60405161009791906100fc565b60405180910390f35b60006405d21dba00905090565b60006001905090565b600064060db88400905090565b6100cc81610117565b82525050565b6100db81610123565b82525050565b60006020820190506100f660008301846100c3565b92915050565b600060208201905061011160008301846100d2565b92915050565b60008115159050919050565b600081905091905056fea2646970667358221220a8008c2255fdf55cbd71f9511ee61a3a0beb5203fa1fea501dda2f7954a804d264736f6c63430008000033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [],
+    "types": null
+  }
+}
