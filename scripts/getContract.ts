@@ -13,7 +13,7 @@ async function main() {
     // await deployments.fixture(["TestArb"]);
 
     const deployment = await deployments.get("TestArb")
-    // console.log(deployment)
+    console.log(deployment.address)
     
     const contract = await ethers.getContractAt(
         deployment.abi,

@@ -1,7 +1,8 @@
 # barebones-hardhat
 
-For a stable environment, copy the package.json from this project
- "@nomiclabs/hardhat-ethers": "npm:hardhat-deploy-ethers@^0.3.0-beta.10"
+For a stable environment, copy the package.json from this project.
+
+"@nomiclabs/hardhat-ethers": "npm:hardhat-deploy-ethers@^0.3.0-beta.10"
 to your package.json, then
 
 yarn install
